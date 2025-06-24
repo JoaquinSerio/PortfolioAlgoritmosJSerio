@@ -1,0 +1,100 @@
+lenguaje natural:
+Dadas dos listas ordenadas que representan conjuntos sin duplicados, recorrer
+ambas simultáneamente y construir una nueva lista que contenga todos los elementos de ambas sin repetir.
+
+Precondición:
+
+A y B son listas ordenadas crecientemente, sin elementos duplicados.
+
+Postcondición:
+
+C es una lista ordenada que contiene todos los elementos de A ∪ B, sin duplicados.
+
+
+Pseudo
+
+Union(A, B):
+  i ← A.primero
+  j ← B.primero
+  C ← lista vacía
+  mientras i ≠ nulo y j ≠ nulo hacer
+    si i.etiqueta < j.etiqueta entonces
+      C.insertar(i.etiqueta)
+      i ← i.siguiente
+    sino si i.etiqueta > j.etiqueta entonces
+      C.insertar(j.etiqueta)
+      j ← j.siguiente
+    sino
+      C.insertar(i.etiqueta)
+      i ← i.siguiente
+      j ← j.siguiente
+  fin mientras
+  mientras i ≠ nulo hacer
+    C.insertar(i.etiqueta)
+    i ← i.siguiente
+  fin mientras
+  mientras j ≠ nulo hacer
+    C.insertar(j.etiqueta)
+    j ← j.siguiente
+  fin mientras
+  retornar C
+
+  Casos de prueba:
+
+  A = [], B = [] → C = []
+
+  A = [1,3,5], B = [2,4,6] → C = [1,2,3,4,5,6]
+
+  A = [1,2,3], B = [2,3,4] → C = [1,2,3,4]
+
+  A = [1,2], B = [] → C = [1,2]
+
+Tiempos de ejecucion:
+
+  Se avanza puntero en una lista por cada comparación, a lo sumo |A| + |B| pasos. → O(n + m).
+
+
+
+
+Intersección de Conjuntos (Listas ordenadas)
+
+lenguaje natural:
+Dadas dos listas ordenadas sin duplicados, construir una lista con los elementos que aparecen en ambas.
+
+Precondición:
+
+A y B ordenadas, sin duplicados.
+
+Postcondición:
+
+C contiene A ∩ B, ordenada.
+
+Seudocódigo:
+
+Interseccion(A, B):
+  i ← A.primero
+  j ← B.primero
+  C ← lista vacía
+  mientras i ≠ nulo y j ≠ nulo hacer
+    si i.etiqueta < j.etiqueta entonces
+      i ← i.siguiente
+    sino si i.etiqueta > j.etiqueta entonces
+      j ← j.siguiente
+    sino
+      C.insertar(i.etiqueta)
+      i ← i.siguiente
+      j ← j.siguiente
+  fin mientras
+  retornar C
+
+Casos de prueba:
+
+A = [], B = [1,2] → C = []
+
+A = [1,2,3], B = [2,3,4] → C = [2,3]
+
+A = [1,3,5], B = [2,4,6] → C = []
+
+Orden de tiempo de ejecucion:
+
+Igual que Unión → O(n + m).

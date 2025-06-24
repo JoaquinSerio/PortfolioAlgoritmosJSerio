@@ -1,0 +1,13 @@
+El strongbuilder es una clase mutable para construir y modificar cadenas de
+caracteres sin crear objetos intermedios
+
+Método	Ejemplo de uso
+new StringBuilder()	crea vacío
+new StringBuilder("X")	crea con contenido "X"
+setLength(…)	acorta o alarga rellenando con \u0000
+ensureCapacity(…)	reserva espacio interno
+append(…)	concatena al final
+insert(…)	inserta en posición
+delete(…)	elimina rango
+deleteCharAt(…)	elimina carácter
+reverse()	invierte el contenido

@@ -1,0 +1,40 @@
+Operación 3: Obtener la clave inmediata anterior (predecesor) a una clave dada
+Natural:
+Para etiqueta k, busca el nodo; si tiene subárbol izquierdo, el predecesor es el mayor de ese subárbol. Si no, subir por ancestros hasta encontrar un ancestro del que venimos por la rama derecha.
+
+Pre/Post:
+
+Pre: k no es null.
+
+Post: devuelve etiqueta inmediata menor que k, o null si no existe.
+
+Casos de prueba:
+
+k no en árbol → null.
+
+k es el mínimo → null.
+
+k con subárbol izquierdo no vacío → mayor de ese subárbol.
+
+k sin hijo izquierdo → subir ancestros.
+
+Pseudocódigo:
+
+
+Predecesor(k):
+  nodo ← BuscarNodo(k)
+  Si nodo = null:
+    Retornar null
+  Si nodo.hijoIzq ≠ null:
+    Retornar nodo.hijoIzq.MayorNodo().etiqueta
+  ancestro ← raiz
+  pre ← null
+  Mientras ancestro ≠ null:
+    Si k > ancestro.etiqueta:
+      pre ← ancestro
+      ancestro ← ancestro.hijoDer
+    Sino:
+      ancestro ← ancestro.hijoIzq
+  Retornar (pre ≠ null ? pre.etiqueta : null)
+Complejidad:
+Θ(h) dos búsquedas/descensos a lo sumo.

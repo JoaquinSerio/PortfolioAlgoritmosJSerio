@@ -1,0 +1,12 @@
+a) Variables de clase
+x
+
+b) Variables de instancia
+y
+
+La salida del codigo es
+a.y = 5
+b.y = 6
+a.x = 2
+b.x = 2
+IdentifyMyParts.x = 2

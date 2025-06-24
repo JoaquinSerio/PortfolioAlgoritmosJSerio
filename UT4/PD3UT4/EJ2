@@ -1,0 +1,35 @@
+Ejercicio #2: Contar todas las hojas del árbol
+1. Descripción en lenguaje natural
+Recorremos todo el árbol; cada vez que llegamos a un nodo sin hijos (hoja), incrementamos nuestro
+contador en 1.
+
+2. Precondiciones y postcondiciones
+Precondición: el árbol puede ser vacío o no.
+
+Postcondición: devuelve un entero ≥ 0 con el número de nodos hoja.
+
+3. Pseudocódigo
+Método en la clase Árbol
+
+
+ContarHojas():
+    Si raiz = null:
+        Retornar 0
+    Sino:
+        Retornar raiz.ContarHojasNodo()
+
+Método en la clase Nodo
+
+ContarHojasNodo():
+    Si izquierdo = null Y derecho = null:
+        Retornar 1
+    suma ← 0
+    Si izquierdo ≠ null:
+        suma ← suma + izquierdo.ContarHojasNodo()
+    Si derecho ≠ null:
+        suma ← suma + derecho.ContarHojasNodo()
+    Retornar suma
+
+
+4. Orden
+Se visita cada nodo exactamente una vez: Θ(n).

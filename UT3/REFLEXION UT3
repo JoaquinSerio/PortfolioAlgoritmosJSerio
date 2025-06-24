@@ -1,0 +1,8 @@
+Terminé esta unidad sintiéndome más seguro con las estructuras lineales: supe cuándo conviene
+usar un arreglo versus una lista enlazada y entendí cómo funcionan internamente pilas y colas
+circulares. Me gustó ver que, más allá de la teoría, implementarlas “a mano” ayuda a afianzar
+la lógica de índices y punteros. Además, trabajar con conjuntos reforzó mi habilidad de manejar
+nodos ordenados y pensar en complejidad O(n), que ahora veo en cada bucle. Probar la diferencia
+de memoria y rendimiento entre ArrayList y lista enlazada me hizo apreciar cuándo sacrificar
+espacio por velocidad o viceversa. Siento que, al final, esa práctica me preparó para abordar
+algoritmos más complejos, y espero llevar este empuje a la proxima unidad.

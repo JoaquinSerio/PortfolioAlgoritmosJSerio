@@ -1,0 +1,33 @@
+Operación 1: Obtener la menor clave del árbol
+Natural:
+Desde la raíz, descender siempre al hijo izquierdo hasta encontrar un nodo
+sin hijo izquierdo; su clave es la mínima.
+
+Pre/Post:
+
+Pre: árbol puede ser vacío o no.
+
+Post: si árbol no vacío, devuelve la mínima etiqueta; si vacío, puede devolver null o lanzar excepción.
+
+Casos de prueba:
+
+Árbol vacío → null.
+
+Un solo nodo “A” → “A”.
+
+Árbol desequilibrado → verificar siempre el más pequeño.
+
+Pseudocódigo:
+
+MenorClave():
+  Si raiz = null:
+    Retornar null
+  Retornar raiz.MenorNodo().etiqueta
+
+NodoABB.MenorNodo():
+  Si this.hijoIzq = null:
+    Retornar this
+  Sino:
+    Retornar this.hijoIzq.MenorNodo()
+Complejidad:
+Cada llamada desciende un nivel a la izquierda → Θ(h) en árbol de altura h (Θ(log n) promedio, Θ(n) peor caso).

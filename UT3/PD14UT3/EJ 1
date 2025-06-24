@@ -1,0 +1,29 @@
+Ejercicio 1 – PoneEnCola (vector circular)
+
+Precondición
+
+cola está inicializada con:
+
+A[0..N−1]: arreglo de capacidad N
+
+cabeza índice de extracción
+
+cola índice de inserción
+
+tam número actual de elementos
+
+Postcondición
+
+Si tam < N, se almacena unElemento en la cola, se avanza cola y tam++;
+
+Si tam == N, se produce error de desbordamiento (cola llena).
+
+
+PoneEnCola(unElemento):
+  si tam == N entonces
+    error “Cola llena”
+  sino
+    A[cola] ← unElemento
+    cola ← (cola + 1) mod N
+    tam ← tam + 1
+  fin si

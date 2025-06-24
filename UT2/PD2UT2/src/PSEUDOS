@@ -1,0 +1,70 @@
+Ejercicio #1: Factorial recursivo
+1. Pseudocódigo recursivo
+
+Función factorial(n):
+    Si n == 0:
+        Retornar 1
+    Si n < 0:
+        Retornar error o manejo según convenido
+    Retornar n * factorial(n - 1)
+Caso base: n == 0, devuelve 1.
+
+Progreso hacia el caso base: en cada llamada se hace n → n – 1 hasta llegar a 0. UT2_PD2 (1)
+
+2. Orden de tiempo de ejecución
+Cada llamada hace una sola multiplicación y desciende en 1, por lo que el tiempo es Θ(n).
+
+
+
+Ejercicio #2: Suma lineal de un arreglo
+1. Pseudocódigo recursivo
+
+Función sumaLineal(A, n):
+    Si n <= 0:
+        Retornar 0
+    Retornar A[n-1] + sumaLineal(A, n-1)
+Caso base: n <= 0, devuelve 0.
+
+Progreso hacia el caso base: cada llamada reduce n → n – 1 hasta que n es cero o negativo. UT2_PD2 (1)
+
+2. Orden de tiempo de ejecución
+Hace una suma por cada elemento; tiempo Θ(n).
+
+
+
+
+1. Pseudocódigo recursivo
+
+Función potencia(x, exp):
+    Si exp == 0:
+        Retornar 1
+    Si exp < 0:
+        Retornar 1 / potencia(x, -exp)
+    Retornar x * potencia(x, exp - 1)
+Caso base: exp == 0, devuelve 1.
+
+Progreso hacia el caso base: si exp > 0, decrementa exp; si exp < 0, lo convierte en positivo y luego progresa. UT2_PD2 (1)
+
+2. Orden de tiempo de ejecución
+Cada llamada reduce el exponente en 1 (o lo convierte y luego lo reduce), por lo que es Θ(|exp|).
+
+
+
+Ejercicio #4: Inversión recursiva de un vector
+1. Pseudocódigo recursivo
+
+Función invertir(A, i, j):
+    Si A es null o i >= j o i < 0 o j >= longitud(A):
+        Retornar
+    Intercambiar A[i] ↔ A[j]
+    Llamar invertir(A, i+1, j-1)
+Caso(s) base:
+
+índices fuera de rango (i < 0, j ≥ n).
+
+se cruzan o se igualan (i >= j): no hay más pares que invertir.
+
+Progreso hacia el caso base: tras intercambiar, i → i + 1, j → j – 1. UT2_PD2 (1)
+
+2. Orden de tiempo de ejecución
+Se intercambia cada par hasta el centro: Θ(n/2) = Θ(n).

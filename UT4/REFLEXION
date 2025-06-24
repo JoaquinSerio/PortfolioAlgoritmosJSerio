@@ -1,0 +1,7 @@
+Esta unidad me dejó claro que los árboles binarios de búsqueda son como bibliotecas bien
+organizadas: cada inserción, búsqueda o recorrido sabe exactamente dónde ir, y todo funciona
+en logaritmos cuando el árbol está balanceado. Me gustó ver cómo, con unas pocas líneas de
+recursión o bucles sencillos, funciona todo: desde encontrar el mínimo o máximo hasta listar
+hojas con su nivel, o verificar en un inorden que el árbol sigue ordenado. En el proceso,
+consolidé el salto entre la teoría y la práctica directa en Java, armando métodos reutilizables
+que confirman que cada pieza cumple su rol.

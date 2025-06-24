@@ -1,0 +1,5 @@
+Esta unidad me mostró que los árboles genealógicos, aunque parezcan complicados, son sólo variaciones
+del mismo concepto de árboles, pero adaptados a representar relaciones “padre-hijo” y “hermanos”.
+Con un par de punteros por nodo y un poco de recursión o bucles sencillos, logramos insertar unidades,
+buscar nombres y sacar listados indentados que reflejan claramente la jerarquía. Seguimos en el camino correcto
+y espero seguir llevando esta energía a la próxima unidad.

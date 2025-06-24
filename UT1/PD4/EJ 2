@@ -1,0 +1,14 @@
+public class SomethingIsWrong {
+    public static void main(String[] args) {
+
+        Rectangle myRect;
+        myRect.width = 40;
+        myRect.height = 50;
+        System.out.println("myRect's area is " + myRect.area());
+
+    }
+}
+
+
+El error es que myRect se declara pero nunca se instancia (new Rectangle()), por lo que
+al compilar Java marca “variable myRect might not have been initialized” y al ejecutar habría NullPointer.

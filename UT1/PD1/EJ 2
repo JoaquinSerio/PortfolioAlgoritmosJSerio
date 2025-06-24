@@ -1,0 +1,12 @@
+La primer llamada es:
+1. System.out.println("ik");
+
+2. desconcertar(membrillo);
+
+3. System.out.println(dirigible);
+
+4. sipo("ping", -5);
+
+5. System.out.println(membrillo + " sup");
+
+6. System.out.println("muaa-ja-ja-ja");

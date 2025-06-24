@@ -1,0 +1,6 @@
+Acá el bucle para en el último nodo (porque su siguiente es null), y luego le enlaza otroNodo como nuevo último.
+Si la lista está vacía (primero == null), al evaluar primero.siguiente ya falla; pero si hay al
+menos un nodo, funciona OK.
+
+c) El algoritmo está mal hecho, ya que dará error en tiempo de ejecución si la lista está vacía.
+

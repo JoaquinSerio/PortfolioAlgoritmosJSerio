@@ -1,0 +1,32 @@
+Ejercicio #3: Suma de las claves de todos los elementos
+1. Descripción en lenguaje natural
+Recorremos el árbol en cualquier orden (por ejemplo, post-orden). En cada nodo
+sumamos su clave al resultado de sumar recursivamente las claves de sus subárboles izquierdo y derecho.
+
+2. Precondiciones y postcondiciones
+Precondición: el árbol puede estar vacío o no; las claves son enteros.
+
+Postcondición: devuelve la suma de todas las claves, o 0 si el árbol está vacío.
+
+3. Pseudocódigo
+Método en la clase Árbol
+
+
+SumarClaves():
+    Si raiz = null:
+        Retornar 0
+    Sino:
+        Retornar raiz.SumarClavesNodo()
+Método en la clase Nodo
+
+
+SumarClavesNodo():
+    suma ← this.clave
+    Si izquierdo ≠ null:
+        suma ← suma + izquierdo.SumarClavesNodo()
+    Si derecho ≠ null:
+        suma ← suma + derecho.SumarClavesNodo()
+    Retornar suma
+
+4. Orden
+Se visita cada nodo una vez y se hacen sumas constantes: Θ(n).

@@ -1,0 +1,61 @@
+Insertamos en este orden en un ABB vacío:
+
+12, 25, 14, 1, 33, 88, 45, 2, 7, 66, 5, 99
+
+
+          12
+         /  \
+        1    25
+         \     \
+          2     33
+           \      \
+            7      88
+           /      /  \
+          5      45  99
+                 \
+                 66
+Preorden:
+12, 1, 2, 7, 5, 25, 33, 88, 45, 66, 99
+
+Inorden:
+1, 2, 5, 7, 12, 25, 33, 45, 66, 88, 99
+
+Postorden:
+5, 7, 2, 1, 66, 45, 99, 88, 33, 25, 12
+
+
+
+Eliminaciones paso a paso
+Eliminamos en secuencia las claves 99, 2, 12, 33:
+
+Borrar 99 (hoja): simplemente se retira como hijo derecho de 88.
+
+Borrar 2 (un sólo hijo: 7): se “salta” 2 y se enlaza directamente 1→derecha=7.
+
+Borrar 12 (dos hijos):
+
+Su sucesor inorden es 25 (mínimo en subárbol derecho).
+
+Se copia 25 en la raíz y luego se elimina el nodo original 25, que tiene un único hijo (33),
+enlazándolo donde estaba.
+
+Borrar 33 (un sólo hijo: 88): se enlaza directamente 25→derecha=88.
+
+La estructura final queda:
+
+
+       25
+      /  \
+     1    88
+      \   /
+       7 45
+      /   \
+     5    66
+Preorden:
+25, 1, 7, 5, 88, 45, 66
+
+Inorden:
+1, 5, 7, 25, 45, 66, 88
+
+Postorden:
+5, 7, 1, 66, 45, 88, 25

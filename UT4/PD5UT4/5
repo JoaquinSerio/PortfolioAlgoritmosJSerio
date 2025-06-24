@@ -1,0 +1,19 @@
+Operación 5: Listar todas las hojas cada una con su nivel
+
+ListarHojasConNivel():
+  lista ← vacía
+  Si raiz ≠ null:
+    RecorrerHojas(raiz, 1, lista)
+  Retornar lista
+
+RecorrerHojas(nodo, nivel, lista):
+  Si nodo.hijoIzq = null Y nodo.hijoDer = null:
+    lista.agregar((nodo.etiqueta, nivel))
+  Si hijoIzq ≠ null:
+    RecorrerHojas(hijoIzq, nivel+1, lista)
+  Si hijoDer ≠ null:
+    RecorrerHojas(hijoDer, nivel+1, lista)
+
+Complejidad:
+Θ(n), pues toca cada nodo una vez.
+

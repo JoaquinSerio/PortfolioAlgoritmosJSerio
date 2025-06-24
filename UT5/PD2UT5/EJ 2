@@ -1,0 +1,30 @@
+1. Descripción en lenguaje natural
+Partiendo del nodo raíz, descendemos por cada letra de la palabra.
+
+Si en cualquier paso no existe el hijo correspondiente → no está en el índice.
+
+Si llegamos al nodo final y esPalabra == true → devolvemos su lista de páginas.
+
+2. Precondiciones / postcondiciones
+Pre: palabra en minúsculas, trie ya construido.
+
+Post: lista de páginas (posibles vacía) o indicador de “no encontrado”.
+
+3. Pseudocódigo
+
+
+BuscarPaginas(trieRoot, palabra):
+  nodo ← trieRoot
+  Para i desde 0 hasta |palabra|-1:
+    idx ← palabra[i] - 'a'
+    Si nodo.hijos[idx] es null:
+      Retornar “No está en el libro”
+    nodo ← nodo.hijos[idx]
+  Si nodo.esPalabra:
+    Retornar nodo.paginas
+  Sino:
+    Retornar “No está en el libro”
+
+4. Orden
+Θ(m) donde m = longitud de la palabra.
+

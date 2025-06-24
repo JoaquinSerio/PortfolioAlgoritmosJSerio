@@ -1,0 +1,21 @@
+Ejercicio 2 – QuitaDeCola (vector circular)
+
+Precondición
+
+Mismos campos que arriba.
+
+Postcondición
+
+Si tam > 0, se extrae el elemento en cabeza, se avanza cabeza, tam-- y se devuelve el valor;
+
+Si tam == 0, se produce error de subdesbordamiento (cola vacía).
+
+QuitaDeCola():
+  si tam == 0 entonces
+    error “Cola vacía”
+  sino
+    elemento ← A[cabeza]
+    cabeza ← (cabeza + 1) mod N
+    tam ← tam − 1
+    retornar elemento
+  fin si

@@ -1,0 +1,4 @@
+Primero enlaza otroNodo hacia nodo2, luego ajusta nodo1.siguiente para que apunte a otroNodo.
+El resultado: otroNodo queda entre nodo1 y nodo2.
+
+b) Inserta “otroNodo” en la lista, quedando entre nodo1 y nodo2.

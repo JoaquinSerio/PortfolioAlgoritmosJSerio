@@ -1,0 +1,40 @@
+Operación 6: Verificar si un árbol es de búsqueda
+Natural:
+Recorrer en orden y confirmar que las etiquetas van estrictamente crecientes;
+o bien, recursivamente verificar que para cada nodo, todos los del izquierdo son
+menores y los del derecho mayores.
+
+Pre/Post:
+
+Pre: árbol cualquiera.
+
+Post: booleano indicando si satisface la propiedad de ABB.
+
+Casos de prueba:
+
+Árbol vacío → true.
+
+Uno con un único nodo → true.
+
+Árbol con hijo izquierdo mayor → false.
+
+Árbol correcto → true.
+
+Pseudocódigo (inorden):
+
+EsABB():
+  prev ← null
+  Retornar InordenCheck(raiz, prev)
+
+InordenCheck(nodo, prev_ref):
+  Si nodo = null:
+    Retornar true
+  Si ¬InordenCheck(nodo.hijoIzq, prev_ref):
+    Retornar false
+  Si prev_ref.valor ≠ null Y nodo.etiqueta ≤ prev_ref.valor:
+    Retornar false
+  prev_ref.valor ← nodo.etiqueta
+  Retornar InordenCheck(nodo.hijoDer, prev_ref)
+
+Complejidad:
+Θ(n), visita cada nodo una vez.

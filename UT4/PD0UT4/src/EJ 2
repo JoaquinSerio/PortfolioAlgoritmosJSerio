@@ -1,0 +1,15 @@
+Función construirDesdePrefija(tokens):
+    // tokens es una cola o lista en la que podemos extraer el primer elemento
+    Si tokens está vacío:
+        Error("Expresión incompleta")
+    token ← tokens.popFront()
+    Si token es un operador binario (por ejemplo '+', '-', '*', '/'):
+        nodoIzq ← construirDesdePrefija(tokens)
+        nodoDer ← construirDesdePrefija(tokens)
+        Retornar NodoOperador(token, nodoIzq, nodoDer)
+    Sino si token es un número o constante:
+        Retornar NodoConstante(parsearNúmero(token))
+    Sino si token es un identificador válido de variable:
+        Retornar NodoVariable(token)
+    Sino:
+        Error("Token inválido: " + token)

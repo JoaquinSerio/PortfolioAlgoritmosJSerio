@@ -1,0 +1,8 @@
+En Java el operador == (o !=) aplicado a objetos compara referencias, no contenido.
+
+Cada concatenación con + genera un nuevo objeto String en el heap, distinto de cualquier
+literal pre-internado en el pool de constantes, de modo que s != "1000" siempre será true
+y el bucle nunca termina.
+
+En C#, en cambio, la clase String sobrecarga el operador == para que compare el
+contenido de las cadenas (ordinal, case-sensitive) en lugar de las referencias

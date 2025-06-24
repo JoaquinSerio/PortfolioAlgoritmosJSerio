@@ -1,0 +1,8 @@
+hace que:
+
+1. otroNodo referencia al antiguo nodo2.
+
+2. nodo1.siguiente pasa de apuntar a nodo2 a apuntar a nodo3.
+Eso elimina efectivamente a nodo2 de la cadena (sin insertarlo en otro sitio).
+
+c) Elimina nodo2 de la lista.

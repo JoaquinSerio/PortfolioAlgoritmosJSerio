@@ -1,0 +1,35 @@
+Ejercicio #4: Contar nodos en un nivel dado
+1. Descripción en lenguaje natural
+Dado un nivel k (la raíz está en nivel 1), recorremos el árbol: cuando llamamos con
+nivel 1 sobre un nodo válido, contamos 1; si el nivel > 1, descendemos a los hijos
+con nivel k–1 y sumamos sus conteos.
+
+2. Precondiciones y postcondiciones
+Precondición: k ≥ 1; el árbol puede estar vacío.
+
+Postcondición: devuelve un entero ≥ 0 con la cantidad de nodos exactamente en el nivel k.
+
+3. Pseudocódigo
+Método en la clase Árbol
+
+
+ContarNivel(k):
+    Si k < 1:
+        Retornar 0
+    Si raiz = null:
+        Retornar 0
+    Retornar raiz.ContarEnNivelNodo(k)
+Método en la clase Nodo
+
+
+ContarEnNivelNodo(k):
+    Si k = 1:
+        Retornar 1
+    suma ← 0
+    Si izquierdo ≠ null:
+        suma ← suma + izquierdo.ContarEnNivelNodo(k - 1)
+    Si derecho ≠ null:
+        suma ← suma + derecho.ContarEnNivelNodo(k - 1)
+    Retornar suma
+4. Orden
+En el peor caso se recorre todo el árbol hasta profundidad k, pero siguiendo ambos hijos: Θ(n).

@@ -1,0 +1,13 @@
+Método	¿Qué hace?	Ejemplo de uso
+substring	Extrae parte de la cadena	"texto".substring(1,4) → "ext"
+split	Divide según expresiones regulares	"a,b,c".split(",") → ["a","b","c"]
+subSequence	Similar a substring, devuelve CharSequence	"hola".subSequence(1,3) → "ol"
+trim	Quita espacios al inicio y fin	" x ".trim() → "x"
+toLowerCase	Pasa a minúsculas	"A".toLowerCase() → "a"
+toUpperCase	Pasa a mayúsculas	"a".toUpperCase() → "A"
+indexOf	Primera posición de carácter o substring	"java".indexOf("a") → 1
+lastIndexOf	Última posición de carácter o substring	"banana".lastIndexOf("a") → 5
+contains	Indica si está la subcadena	"abc".contains("b") → true
+replace	Reemplaza caracteres o literales simples	"aa".replace('a','b') → "bb"
+replaceAll	Reemplaza por expresión regular	"a1b2".replaceAll("\\d","") → "ab"
+replaceFirst	Igual que replaceAll pero solo la primera coincidencia	"a1b2".replaceFirst("\\d","") → "ab2"

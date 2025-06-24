@@ -1,0 +1,19 @@
+a) Costo de memoria
+
+Array: ocupa un bloque contiguo de N referencias, más
+ el overhead de la estructura de array.
+
+Lista enlazada: cada nodo almacena un objeto de datos + 1 referencia “siguiente” (8 bytes) + overhead de
+objeto (entre 16–24 bytes). En total: ≈ (datos + puntero) + overhead por nodo, es decir, mucho más que el array.
+
+b) Consideraciones sobre tamaño
+
+Con array, necesitas estimar el número máximo de alumnos de antemano o reubicar/copiar cuando crece.
+Si las inscripciones siguen llegando semanas después, puedes quedarte sin espacio o sufrir demasiadas expansiones.
+
+Con lista enlazada, el registro es dinámico: añades nodos según llegan más inscripciones sin preocuparte
+por capacidad fija. La sobrecarga de memoria (punteros + objetos) compensa la flexibilidad cuando la
+cantidad final es incierta y crece gradualmente.
+
+En un curso con inscripción extendida en el tiempo, la lista enlazada suele resultar más adecuada: se adapta
+sin copia y facilita inserciones y borrados rápidos, a costa de mayor overhead por nodo.

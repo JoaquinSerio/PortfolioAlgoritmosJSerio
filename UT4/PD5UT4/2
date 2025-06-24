@@ -1,0 +1,33 @@
+Operación 2: Obtener la mayor clave del árbol
+Natural:
+Análogo al mínimo, pero descendiendo siempre por hijo derecho.
+
+Pre/Post:
+
+Pre: igual que 1.
+
+Post: devuelve la máxima etiqueta o null si vacío.
+
+Casos de prueba:
+
+Árbol vacío → null.
+
+Un solo nodo “Z” → “Z”.
+
+Insertar valores y comprobar el mayor.
+
+Pseudocódigo:
+
+MayorClave():
+  Si raiz = null:
+    Retornar null
+  Retornar raiz.MayorNodo().etiqueta
+
+NodoABB.MayorNodo():
+  Si this.hijoDer = null:
+    Retornar this
+  Sino:
+    Retornar this.hijoDer.MayorNodo()
+Complejidad:
+Θ(h), análogo a la operación anterior.
+

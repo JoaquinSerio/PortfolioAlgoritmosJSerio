@@ -1,0 +1,20 @@
+Operación 4: Obtener la cantidad de nodos en un nivel dado
+
+ContarNivel(k):
+  Si k < 1 o raiz = null:
+    Retornar 0
+  Retornar raiz.ContarEnNivel(k)
+
+NodoABB.ContarEnNivel(k):
+  Si k = 1:
+    Retornar 1
+  suma ← 0
+  Si hijoIzq ≠ null:
+    suma ← suma + hijoIzq.ContarEnNivel(k − 1)
+  Si hijoDer ≠ null:
+    suma ← suma + hijoDer.ContarEnNivel(k − 1)
+  Retornar suma
+
+
+Complejidad:
+Visita cada nodo hasta nivel k → Θ(n) en peor caso.

@@ -1,0 +1,6 @@
+Tras otroNodo.siguiente ← nodo1, otroNodo apunta a nodo1 (aún sin unirse a la lista).
+
+Al cambiar nodo2.siguiente para que apunte a nodo3, no entra en juego otroNodo.
+
+En conjunto, el único efecto es que nodo2 salta sobre nodo1 (que sigue estático), pero no se enlaza otroNodo.
+d) No tiene ningún efecto sobre la lista.

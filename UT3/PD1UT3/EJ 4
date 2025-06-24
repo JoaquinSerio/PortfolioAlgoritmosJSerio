@@ -1,0 +1,4 @@
+Al salir del bucle, nodoActual es null (porque el bucle acaba justo cuando alcanza null),
+y luego intenta null.siguiente → error de ejecución.
+
+d) El algoritmo está mal hecho, ya que dará siempre error en tiempo de ejecución.

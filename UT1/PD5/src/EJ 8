@@ -1,0 +1,5 @@
+La capacidad inicial es 16 + longitud del contenido.
+
+Longitud de "Able was I ere I saw Elba." = 27
+
+Capacidad = 16 + 27 = 43.

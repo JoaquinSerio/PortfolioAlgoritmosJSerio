@@ -1,0 +1,58 @@
+  1.a) ¿Cuál afirmación es correcta?
+  a) El árbol tiene altura 7.
+  b) “Y” es ancestro de “C”.
+  c) “X” es descendiente de “P”.
+  d) “S” es una hoja.
+
+  (d) “S” es una hoja es la única verdadera, porque cuando insertamos “S” es
+  hijo derecho de “P” y nunca adquiere descendientes.
+
+  Por qué no las otras:
+
+  (a) Altura en nodos = 7, pero si se define altura como número de aristas al
+  camino más largo, son 6; además la afirmación no está bien ambigua.
+
+  (b) “Y” está en el subárbol derecho de “T”, mientras que “C” está en el
+  izquierdo; no hay relación de ancestro.
+
+  (c) “X” está bajo “Y”→“U”→“X”, nada que ver con “P”.
+
+  1.b) En el árbol resultante, ¿cuál es correcta?
+  a) El árbol tiene cinco hojas.
+  b) “V” es descendiente de “S”.
+  c) “K” es hermano de “J”.
+  d) “A” y “X” están al mismo nivel.
+
+  (a) El árbol tiene cinco hojas.
+
+  Las hojas son los nodos sin hijos:
+
+  “C”
+
+  “N”
+
+  “S”
+
+  “V”
+
+  “Z”
+
+  Total = 5.
+
+  Por qué no las otras:
+
+  (b) “V” está en el subárbol de “X” (derecho de “Y”), “S” en el subárbol
+  izquierdo de “T”→“P”: no hay parentesco.
+
+  (c) “K” es padre de “J”, no hermano.
+
+  (d) “A” está en nivel 6, “X” en nivel 4.
+
+  1.c) ¿Qué recorrido imprime las claves en orden lexicográfico?
+  a) PREORDEN
+  b) POSTORDEN
+  c) INORDEN
+  d) POR NIVELES
+
+  (c) INORDEN, ya que en un árbol binario de búsqueda visitar primero subárbol
+  izquierdo, luego raíz y luego subárbol derecho produce las claves ordenadas.

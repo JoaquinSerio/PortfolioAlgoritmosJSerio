@@ -1,0 +1,54 @@
+Ejercicio #1: Inserción de un nuevo nodo en el ABB
+1. Descripción en lenguaje natural
+Para insertar un nuevo elemento en un árbol binario de búsqueda
+comparamos su clave con la de la raíz; si es menor, vamos al subárbol
+izquierdo, si es mayor, al derecho. Cuando encontramos un hijo nulo, enlazamos ahí el nuevo nodo.
+
+2. Precondiciones y postcondiciones
+Precondiciones:
+
+El árbol puede estar vacío o no.
+
+El nodo a insertar no debe ya existir en el árbol (no hay clave duplicada).
+
+Postcondiciones:
+
+El árbol sigue siendo un ABB válido.
+
+El nuevo nodo queda en la posición correcta según su clave.
+
+Todas las demás relaciones padre-hijo se mantienen.
+
+3. Pseudocódigo
+Método en la clase Árbol (TArbolBB)
+
+
+Insertar(nuevoNodo):
+    Si raiz = null:
+        raiz ← nuevoNodo
+    Sino:
+        raiz.InsertarNodo(nuevoNodo)
+Método en la clase Nodo (TElementoAB)
+
+
+InsertarNodo(nuevoNodo):
+    Si nuevoNodo.clave < this.clave:
+        Si izquierdo = null:
+            izquierdo ← nuevoNodo
+        Sino:
+            izquierdo.InsertarNodo(nuevoNodo)
+    Sino si nuevoNodo.clave > this.clave:
+        Si derecho = null:
+            derecho ← nuevoNodo
+        Sino:
+            derecho.InsertarNodo(nuevoNodo)
+        Fin Si
+    Fin Si
+Fim
+4. Orden
+Cada comparación desciende un nivel:
+
+Caso promedio (árbol balanceado): Θ(log n)
+
+Peor caso (desbalanceado en lista): Θ(n)
+

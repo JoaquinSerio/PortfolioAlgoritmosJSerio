@@ -1,0 +1,18 @@
+El algoritmo recorre recursivamente ambos hijos (si existen), obtiene de cada uno su
+valor y devuelve max(A,B)+1, partiendo de A=B=–1.
+
+¿Qué devuelve aplicado a la raíz?
+
+la altura del árbol (en nodos), pues a cada nivel añade 1 sobre el
+máximo de las alturas de los subárboles izquierdo y derecho.
+
+Opciones incorrectas:
+
+No evalúa ninguna expresión aritmética.
+
+No cuenta grado (número de hijos) ni tamaño (nº de nodos). UT4_PD1 (1)
+
+Orden de tiempo
+Visita cada nodo exactamente una vez y hace trabajo O(1) en cada visita → O(n).
+
+Las otras opciones subestiman o sobreestiman este recorrido lineal.

@@ -1,0 +1,32 @@
+Función Insertar(unaEtiqueta, etiquetaPadre) → booleano
+  Si etiquetaPadre == "" Entonces
+    Si raíz == null Entonces
+      raíz ← NuevoNodo(unaEtiqueta)
+      Retornar true
+    Sino
+      // ya había raíz, no permitimos segunda
+      Retornar false
+  FinSi
+
+  // buscamos al padre existente
+  nodoPadre ← BuscarNodo(raíz, etiquetaPadre)
+  Si nodoPadre == null Entonces
+    // padre no existe
+    Retornar false
+  FinSi
+
+  // creamos el nuevo hijo
+  nuevo ← NuevoNodo(unaEtiqueta)
+
+  Si nodoPadre.primerHijo == null Entonces
+    nodoPadre.primerHijo ← nuevo
+  Sino
+    // lo encadenamos como último hermano derecho
+    actual ← nodoPadre.primerHijo
+    Mientras actual.hermanoDerecho != null Hacer
+      actual ← actual.hermanoDerecho
+    FinMientras
+    actual.hermanoDerecho ← nuevo
+  FinSi
+
+  Retornar true

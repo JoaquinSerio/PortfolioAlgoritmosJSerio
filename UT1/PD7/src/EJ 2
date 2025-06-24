@@ -1,0 +1,18 @@
+Caso 1
+
+String s1 = "Hola";
+String s2 = "Hola";
+if (s1 == s2) System.out.println("True");
+else           System.out.println("False");
+Ambos literales "Hola" se internan automáticamente en el string pool al compilar,
+por lo que s1 y s2 referencian exactamente el mismo objeto y s1 == s2 devuelve true
+
+
+Caso 2
+
+String s1 = new String("Hola");
+String s2 = "Hola";
+if (s1 == s2) System.out.println("True");
+else           System.out.println("False");
+Acá new String("Hola") crea un objeto distinto en el heap, distinto del literal internado.
+Por tanto s1 y s2 apuntan a referencias diferentes y s1 == s2 es false

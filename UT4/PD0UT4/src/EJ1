@@ -1,0 +1,30 @@
+Ejercicio #1: Sustitución de variables y evaluación de un árbol de expresión
+1. Pseudocódigo
+
+
+Función evaluarNodo(nodo, mapaValores):
+    Si nodo.tipo == CONSTANTE:
+        Retornar nodo.valor
+    Si nodo.tipo == VARIABLE:
+        Si mapaValores contiene nodo.nombre:
+            Retornar mapaValores[nodo.nombre]
+        Sino:
+            Error("Variable sin valor")
+    // nodo.tipo es OPERADOR
+    izquierda ← evaluarNodo(nodo.izquierdo, mapaValores)
+    derecha  ← evaluarNodo(nodo.derecho,  mapaValores)
+    Según nodo.operador hacer:
+        '+' → Retornar izquierda + derecha
+        '-' → Retornar izquierda - derecha
+        '*' → Retornar izquierda * derecha
+        '/' → Retornar izquierda / derecha
+        Otro → Error("Operador desconocido")
+Recorre el árbol en postorden.
+
+En cada variable busca su valor en el diccionario mapaValores.
+
+Aplica la operación correspondiente sobre los resultados de subárboles.
+
+2. Orden
+Se visita cada nodo exactamente una vez y en cada uno se hace un número constante de operaciones
+ (búsqueda en mapa y operación aritmética), por lo que el coste es Θ(n), siendo n el número de nodos del árbol.

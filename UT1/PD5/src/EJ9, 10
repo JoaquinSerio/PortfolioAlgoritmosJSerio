@@ -1,0 +1,10 @@
+a) hannah.length() → 33
+b) hannah.charAt(12) → 'b'
+c) Una forma de referenciar esa 'b':
+
+
+EJ10
+
+Resultado: "car"
+
+Longitud: 3
