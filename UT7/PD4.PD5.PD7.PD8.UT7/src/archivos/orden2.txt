@@ -1,0 +1,8 @@
+Inicio
+A
+B
+C
+D
+E
+F
+Fin

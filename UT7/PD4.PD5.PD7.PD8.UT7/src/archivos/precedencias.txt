@@ -1,0 +1,9 @@
+Inicio,A
+Inicio,B
+A,C
+B,C
+C,D
+C,E
+D,F
+E,F
+F,Fin

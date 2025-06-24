@@ -1,0 +1,12 @@
+Esta unidad me hizo entender realmente cómo funcionan por dentro las estructuras de datos que
+uso constantemente. Antes sabía que HashMap era rápido para buscar, pero no tenía idea de que
+detrás había toda esta mecánica de funciones hash, buckets y colisiones. Es como cuando aprendes
+a manejar y después te explican cómo funciona el motor del auto.
+
+Lo que más me voló la cabeza fue darme cuenta de que algo tan simple como el método hashCode() puede
+hacer o romper el rendimiento de toda una aplicación.
+También me sorprendió lo elegante que es la solución de usar arrays y listas enlazadas para manejar colisiones.
+Es una de esas ideas que parecen obvias una vez que las entiendes, pero que requieren mucha creatividad para
+inventarlas la primera vez. Siento que ahora cuando vea un HashMap en código no lo voy a ver como algo imposible
+de descifrar sino como una  herramienta que entiendo y puedo usar de manera más inteligente. Eso cambia bastante
+mi confianza como programador, porque ahora sé no solo qué usar, sino por qué y cuándo usarlo.

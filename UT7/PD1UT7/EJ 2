@@ -1,0 +1,114 @@
+a) Representación mediante lista de adyacencias
+A: [(B,6), (C,5)]
+B: [(D,3), (E,1)]
+C: [(D,2), (E,3)]
+D: [(E,1)]
+E: [(A,4)]
+
+b) Algoritmo de Floyd-Warshall
+
+
+Matriz inicial D⁰:
+    A  B  C  D  E
+A   0  6  5  ∞  ∞
+B   ∞  0  ∞  3  1
+C   ∞  ∞  0  2  3
+D   ∞  ∞  ∞  0  1
+E   4  ∞  ∞  ∞  0
+
+
+k = A (k=0):
+    A  B  C  D  E
+A   0  6  5  ∞  ∞
+B   ∞  0  ∞  3  1
+C   ∞  ∞  0  2  3
+D   ∞  ∞  ∞  0  1
+E   4  10 9  ∞  0
+
+
+k = B (k=1):
+    A  B  C  D  E
+A   0  6  5  9  7
+B   ∞  0  ∞  3  1
+C   ∞  ∞  0  2  3
+D   ∞  ∞  ∞  0  1
+E   4  10 9  7  0
+
+
+k = C (k=2):
+    A  B  C  D  E
+A   0  6  5  7  8
+B   ∞  0  ∞  3  1
+C   ∞  ∞  0  2  3
+D   ∞  ∞  ∞  0  1
+E   4  10 9  6  0
+
+
+k = D (k=3):
+    A  B  C  D  E
+A   0  6  5  7  8
+B   ∞  0  ∞  3  1
+C   ∞  ∞  0  2  3
+D   ∞  ∞  ∞  0  1
+E   4  10 9  6  0
+
+
+k = E (k=4):
+    A  B  C  D  E
+A   0  6  5  7  8
+B   5  0 10  3  1
+C   7  13 0  2  3
+D   5  11 10 0  1
+E   4  10 9  6  0
+
+
+c) Matriz de predecesores y recuperación de caminos
+Matriz de predecesores P:
+    A  B  C  D  E
+A   -  A  A  C  B
+B   E  -  A  B  B
+C   E  A  -  C  C
+D   E  A  A  -  D
+E   E  A  A  D  -
+
+
+Para recuperar camino de i a j:
+pseudocodeALGORITMO RecuperarCamino(P, i, j)
+INICIO
+    SI P[i][j] = null ENTONCES
+        IMPRIMIR "No hay camino"
+        RETORNAR
+    FIN SI
+
+    IMPRIMIR i
+    actual = i
+    MIENTRAS actual ≠ j HACER
+        actual = P[actual][j]
+        IMPRIMIR " → " + actual
+    FIN MIENTRAS
+FIN
+
+
+d) Camino de menor costo entre A y E
+Ejecutando Floyd paso a paso para A→E:
+
+Inicialmente: A→E = ∞
+k=A: A→E = min(∞, A→A + A→E) = min(∞, 0+∞) = ∞
+k=B: A→E = min(∞, A→B + B→E) = min(∞, 6+1) = 7
+k=C: A→E = min(7, A→C + C→E) = min(7, 5+3) = 7
+k=D: A→E = min(7, A→D + D→E) = min(7, 7+1) = 7
+k=E: A→E = min(7, A→E + E→E) = min(7, 7+0) = 7
+
+Camino A→E: A → B → E (costo: 7)
+e) Excentricidades de los vértices
+Excentricidad = máxima distancia desde un vértice a cualquier otro alcanzable
+
+exc(A) = max{0, 6, 5, 7, 7} = 7
+exc(B) = max{5, 0, 10, 3, 1} = 10
+exc(C) = max{7, 13, 0, 2, 3} = 13
+exc(D) = max{5, 11, 10, 0, 1} = 11
+exc(E) = max{4, 10, 9, 6, 0} = 10
+
+f) Centro del grafo
+El centro del grafo es el vértice con menor excentricidad.
+Centro = A (excentricidad = 7)

@@ -1,0 +1,15 @@
+ALGORITMO PRIM(Grafo G)
+INICIO
+    VerticesU ← {vértice arbitrario de G}
+    VerticesV ← V(G) - VerticesU
+    ArbolAAM ← conjunto vacío
+
+    MIENTRAS VerticesV no esté vacío HACER
+        arista_min ← buscar arista de costo mínimo entre VerticesU y VerticesV
+        ArbolAAM ← ArbolAAM ∪ {arista_min}
+        VerticesU ← VerticesU ∪ {destino de arista_min}
+        VerticesV ← VerticesV - {destino de arista_min}
+    FIN MIENTRAS
+
+    DEVOLVER ArbolAAM
+FIN

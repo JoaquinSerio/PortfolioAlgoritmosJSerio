@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rendimiento Tabla Hash</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+</head>
+<body>
+<h1>Evaluación de Rendimiento - Tabla Hash</h1>
+<canvas id="grafico" width="800" height="400"></canvas>
+<script>
+const ctx = document.getElementById('grafico').getContext('2d');
+const chart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: [70,75,80,85,90,91,92,93,94,95,96,97,98,99],
+        datasets: [{
+            label: 'Inserción',
+            data: [2.15,2.47,2.98,3.64,5.09,5.49,6.06,6.51,7.48,8.69,9.66,11.06,13.64,15.60],
+            borderColor: 'rgb(255, 99, 132)',
+            backgroundColor: 'rgba(255, 99, 132, 0.2)'
+        }, {
+            label: 'Búsqueda Exitosa',
+            data: [2.13,2.44,3.00,3.66,5.08,5.53,5.95,6.58,7.24,8.47,9.47,11.03,12.78,15.52],
+            borderColor: 'rgb(54, 162, 235)',
+            backgroundColor: 'rgba(54, 162, 235, 0.2)'
+        }, {
+            label: 'Búsqueda Sin Éxito',
+            data: [5.98,8.29,12.72,19.96,40.97,48.21,60.20,72.83,83.80,105.60,135.77,192.56,258.65,349.63],
+            borderColor: 'rgb(255, 205, 86)',
+            backgroundColor: 'rgba(255, 205, 86, 0.2)'
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            title: {
+                display: true,
+                text: 'Rendimiento Tabla Hash vs Factor de Carga'
+            }
+        },
+        scales: {
+            x: {
+                display: true,
+                title: {
+                    display: true,
+                    text: 'Factor de Carga (%)'
+                }
+            },
+            y: {
+                display: true,
+                title: {
+                    display: true,
+                    text: 'Promedio de Comparaciones'
+                }
+            }
+        }
+    }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+FUNCIÓN conectados(v, w: Vértice): BOOLEANO
+INICIO
+    SI v = null O w = null ENTONCES
+        DEVOLVER falso
+    FIN SI
+
+    SI v.etiqueta = w.etiqueta ENTONCES
+        DEVOLVER verdadero
+    FIN SI
+
+    desvisitarTodosLosVertices()
+    DEVOLVER dfs(v, w)
+FIN
+
+FUNCIÓN dfs(actual, objetivo: Vértice): BOOLEANO
+INICIO
+    actual.visitado ← verdadero
+
+    SI actual.etiqueta = objetivo.etiqueta ENTONCES
+        DEVOLVER verdadero
+    FIN SI
+
+    PARA CADA vecino EN actual.adyacentes HACER
+        SI NOT vecino.visitado ENTONCES
+            SI dfs(vecino, objetivo) ENTONCES
+                DEVOLVER verdadero
+            FIN SI
+        FIN SI
+    FIN PARA
+
+    DEVOLVER falso
+FIN

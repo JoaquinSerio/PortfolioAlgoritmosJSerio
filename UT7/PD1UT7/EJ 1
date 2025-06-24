@@ -1,0 +1,41 @@
+
+pseudocodeALGORITMO ImprimirCamino(pred, origen, destino)
+INICIO
+    SI destino = origen ENTONCES
+        IMPRIMIR origen
+        RETORNAR
+    FIN SI
+
+    SI pred[destino] = null ENTONCES
+        IMPRIMIR "No hay camino de " + origen + " a " + destino
+        RETORNAR
+    FIN SI
+
+    // Construir camino recursivamente
+    ImprimirCamino(pred, origen, pred[destino])
+    IMPRIMIR " → " + destino
+FIN
+
+// Versión iterativa alternativa
+ALGORITMO ImprimirCaminoIterativo(pred, origen, destino)
+INICIO
+    camino = []
+    actual = destino
+
+    MIENTRAS actual ≠ null HACER
+        camino.agregar_al_inicio(actual)
+        actual = pred[actual]
+    FIN MIENTRAS
+
+    SI camino[0] ≠ origen ENTONCES
+        IMPRIMIR "No hay camino de " + origen + " a " + destino
+        RETORNAR
+    FIN SI
+
+    PARA i = 0 HASTA camino.tamaño - 1 HACER
+        IMPRIMIR camino[i]
+        SI i < camino.tamaño - 1 ENTONCES
+            IMPRIMIR " → "
+        FIN SI
+    FIN PARA
+FIN

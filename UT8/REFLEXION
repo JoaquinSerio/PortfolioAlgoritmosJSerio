@@ -1,0 +1,10 @@
+En principio creí que iba a ser mas sencillo, pero estaba equivocado.
+Los algoritmos de camino mínimo como Dijkstra y los árboles de expansión mínima fueron esenciales.
+Nunca había pensado en términos de optimización de redes de manera tan clara. Cuando entendí que problemas
+como encontrar la ruta más corta entre ciudades o diseñar redes de comunicación eficientes eran esencialmente
+problemas de grafos no dirigidos, todo cobró sentido práctico.
+El concepto de componentes conexas me ayudó a entender mejor la idea de "grupos" o "clusters" en datos. Es
+increíble cómo algo tan simple como "¿están conectados estos nodos?" puede revelar estructuras ocultas en
+información aparentemente desordenada.
+Esta unidad me hizo valorar más la elegancia de las soluciones simétricas y me dio herramientas concretas
+para abordar problemas de optimización que antes veía como imposibles de resolver.

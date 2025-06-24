@@ -4,31 +4,41 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/UT4/PD0UT4/PD0UT4.iml" filepath="$PROJECT_DIR$/UT4/PD0UT4/PD0UT4.iml" />
       <module fileurl="file://$PROJECT_DIR$/UT1/PD1/PD1.iml" filepath="$PROJECT_DIR$/UT1/PD1/PD1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UT8/PD1.PD2.UT8/PD1.PD2.UT8.iml" filepath="$PROJECT_DIR$/UT8/PD1.PD2.UT8/PD1.PD2.UT8.iml" />
       <module fileurl="file://$PROJECT_DIR$/UT1/PD10/PD10.iml" filepath="$PROJECT_DIR$/UT1/PD10/PD10.iml" />
       <module fileurl="file://$PROJECT_DIR$/UT3/PD12UT3/PD12UT3.iml" filepath="$PROJECT_DIR$/UT3/PD12UT3/PD12UT3.iml" />
       <module fileurl="file://$PROJECT_DIR$/UT2/PD1UT2/PD1UT2.iml" filepath="$PROJECT_DIR$/UT2/PD1UT2/PD1UT2.iml" />
       <module fileurl="file://$PROJECT_DIR$/UT3/PD1UT3/PD1UT3.iml" filepath="$PROJECT_DIR$/UT3/PD1UT3/PD1UT3.iml" />
       <module fileurl="file://$PROJECT_DIR$/UT4/PD1UT4/PD1UT4.iml" filepath="$PROJECT_DIR$/UT4/PD1UT4/PD1UT4.iml" />
       <module fileurl="file://$PROJECT_DIR$/UT5/PD1UT5/PD1UT5.iml" filepath="$PROJECT_DIR$/UT5/PD1UT5/PD1UT5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UT6/PD1UT6/PD1UT6.iml" filepath="$PROJECT_DIR$/UT6/PD1UT6/PD1UT6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UT7/PD2.PD3.UT7/PD2.PD3.UT7.iml" filepath="$PROJECT_DIR$/UT7/PD2.PD3.UT7/PD2.PD3.UT7.iml" />
       <module fileurl="file://$PROJECT_DIR$/UT2/PD2UT2/PD2UT2.iml" filepath="$PROJECT_DIR$/UT2/PD2UT2/PD2UT2.iml" />
       <module fileurl="file://$PROJECT_DIR$/UT4/PD2UT4/PD2UT4.iml" filepath="$PROJECT_DIR$/UT4/PD2UT4/PD2UT4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UT6/PD2UT6/PD2UT6.iml" filepath="$PROJECT_DIR$/UT6/PD2UT6/PD2UT6.iml" />
       <module fileurl="file://$PROJECT_DIR$/UT5/PD3/PD3.iml" filepath="$PROJECT_DIR$/UT5/PD3/PD3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UT8/PD3.PD4.UT8/PD3.PD4.UT8.iml" filepath="$PROJECT_DIR$/UT8/PD3.PD4.UT8/PD3.PD4.UT8.iml" />
       <module fileurl="file://$PROJECT_DIR$/UT3/PD3UT3/PD3UT3.iml" filepath="$PROJECT_DIR$/UT3/PD3UT3/PD3UT3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UT6/PD3UT6/PD3UT6.iml" filepath="$PROJECT_DIR$/UT6/PD3UT6/PD3UT6.iml" />
       <module fileurl="file://$PROJECT_DIR$/UT1/PD4/PD4.iml" filepath="$PROJECT_DIR$/UT1/PD4/PD4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UT7/PD4.PD5.PD7.PD8.UT7/PD4.PD5.PD7.PD8.UT7.iml" filepath="$PROJECT_DIR$/UT7/PD4.PD5.PD7.PD8.UT7/PD4.PD5.PD7.PD8.UT7.iml" />
       <module fileurl="file://$PROJECT_DIR$/UT3/PD4UT3/PD4UT3.iml" filepath="$PROJECT_DIR$/UT3/PD4UT3/PD4UT3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UT6/PD4UT6/PD4UT6.iml" filepath="$PROJECT_DIR$/UT6/PD4UT6/PD4UT6.iml" />
       <module fileurl="file://$PROJECT_DIR$/UT1/PD5/PD5.iml" filepath="$PROJECT_DIR$/UT1/PD5/PD5.iml" />
       <module fileurl="file://$PROJECT_DIR$/UT4/PD5UT4/PD5UT4.iml" filepath="$PROJECT_DIR$/UT4/PD5UT4/PD5UT4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UT6/PD5UT6/PD5UT6.iml" filepath="$PROJECT_DIR$/UT6/PD5UT6/PD5UT6.iml" />
       <module fileurl="file://$PROJECT_DIR$/UT1/PD6/PD6.iml" filepath="$PROJECT_DIR$/UT1/PD6/PD6.iml" />
       <module fileurl="file://$PROJECT_DIR$/UT3/PD6UT3/PD6UT3.iml" filepath="$PROJECT_DIR$/UT3/PD6UT3/PD6UT3.iml" />
       <module fileurl="file://$PROJECT_DIR$/UT1/PD7/PD7.iml" filepath="$PROJECT_DIR$/UT1/PD7/PD7.iml" />
       <module fileurl="file://$PROJECT_DIR$/UT3/PD7UT3/PD7UT3.iml" filepath="$PROJECT_DIR$/UT3/PD7UT3/PD7UT3.iml" />
       <module fileurl="file://$PROJECT_DIR$/UT5/PD7UT5/PD7UT5.iml" filepath="$PROJECT_DIR$/UT5/PD7UT5/PD7UT5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UT6/PD7UT6/PD7UT6.iml" filepath="$PROJECT_DIR$/UT6/PD7UT6/PD7UT6.iml" />
       <module fileurl="file://$PROJECT_DIR$/UT1/PD8/PD8.iml" filepath="$PROJECT_DIR$/UT1/PD8/PD8.iml" />
       <module fileurl="file://$PROJECT_DIR$/UT3/PD8UT3/PD8UT3.iml" filepath="$PROJECT_DIR$/UT3/PD8UT3/PD8UT3.iml" />
       <module fileurl="file://$PROJECT_DIR$/UT1/PD9/PD9.iml" filepath="$PROJECT_DIR$/UT1/PD9/PD9.iml" />
       <module fileurl="file://$PROJECT_DIR$/UT3/PD9UT3/PD9UT3.iml" filepath="$PROJECT_DIR$/UT3/PD9UT3/PD9UT3.iml" />
       <module fileurl="file://$PROJECT_DIR$/PortfolioAlgoritmosJSerio.iml" filepath="$PROJECT_DIR$/PortfolioAlgoritmosJSerio.iml" />
-      <module fileurl="file://$PROJECT_DIR$/UT5/UT5.iml" filepath="$PROJECT_DIR$/UT5/UT5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UT8/UT8.iml" filepath="$PROJECT_DIR$/UT8/UT8.iml" />
     </modules>
   </component>
 </project>

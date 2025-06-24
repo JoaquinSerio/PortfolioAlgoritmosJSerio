@@ -1,0 +1,19 @@
+Array inicial (16 buckets):
+[0] -> null
+[1] -> null
+[2] -> null
+...
+[15] -> null
+Después de insertar "Hola", "HolaMundo", "HashMap", "Colecciones":
+[0] -> null
+[1] -> null
+[2] -> Entry("HashMap", value) -> null
+[3] -> null
+[4] -> Entry("Hola", value) -> null
+[5] -> null
+[6] -> Entry("HolaMundo", value) -> null
+[7] -> null
+[8] -> Entry("Colecciones", value) -> null
+[9] -> null
+...
+[15] -> null

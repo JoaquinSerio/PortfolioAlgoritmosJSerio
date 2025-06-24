@@ -1,0 +1,14 @@
+Esta unidad fue, sin duda, desafiante. Lo que más me impactó fue darme cuenta de que los grafos
+dirigidos están literalmente en todas partes. Desde las redes sociales donde seguir a alguien no
+significa que te siga de vuelta, hasta los sistemas de dependencias en programación, o incluso la
+forma en que organizamos tareas donde unas dependen de otras. Es como si hubiera estado viendo estas
+estructuras toda la vida sin darme cuenta de que tenían un nombre y una teoría atras.
+
+Los algoritmos como DFS y BFS tomaron un significado completamente nuevo cuando los apliqué a grafos
+dirigidos. Ya no era solo recorrer, sino entender direccionalidad, ciclos, y componentes fuertemente
+conectadas. El concepto de que puedas llegar de A a B pero no necesariamente de B a A cambió mi forma
+de pensar sobre las relaciones y conexiones en general.
+
+Creo que esta unidad me ayudó a desarrollar una forma más estructurada de analizar problemas complejos.
+Ya no veo solo elementos aislados, sino relaciones direccionales que pueden tener implicaciones
+importantes en la solución de problemas reales.

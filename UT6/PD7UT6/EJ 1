@@ -1,0 +1,8 @@
+Diferencias
+
+Object: Basado en identidad (dirección memoria)
+Integer: Basado en valor numérico
+String: Basado en contenido de caracteres
+
+Esto permite que objetos con el mismo contenido tengan el mismo hash code, lo
+que es esencial para colecciones hash.
