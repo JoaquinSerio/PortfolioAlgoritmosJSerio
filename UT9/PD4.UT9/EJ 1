@@ -1,0 +1,26 @@
+Ejercicio 1: Incrementos Recomendados para ShellSort
+Secuencias de Incrementos Principales
+Secuencia Original de Shell: h = n/2, n/4, n/8, ..., 1
+
+Simple pero no óptima
+Complejidad temporal: O(n²)
+
+Secuencia de Knuth: h = (3^k - 1)/2 = 1, 4, 13, 40, 121, ...
+
+Ampliamente utilizada en implementaciones prácticas
+Complejidad temporal: O(n^(3/2))
+
+Secuencia de Sedgewick: Combinación de 4^k + 3×2^(k-1) + 1 y 9×4^k - 9×2^k + 1
+
+Mejor rendimiento promedio que las anteriores
+Complejidad temporal: O(n^(4/3))
+
+Secuencia de Ciura: [1, 4, 10, 23, 57, 132, 301, 701, 1750, ...]
+
+Obtenida mediante análisis secuencial para minimizar el tiempo de ejecución promedio
+Supera en aproximadamente 3% a las mejores secuencias conocidas previamente
+
+Hallazgos Importantes
+ShellSort tiene perspectivas de ejecutarse en tiempo promedio que crece asimétricamente como N logN solo cuando usa secuencias
+de gaps cuyo número de gaps crece en proporción al logaritmo del tamaño del array. Sin embargo, el problema de encontrar la secuencia
+de incrementos adecuada para lograr la complejidad temporal mínima de O(n log n) aún está abierto.

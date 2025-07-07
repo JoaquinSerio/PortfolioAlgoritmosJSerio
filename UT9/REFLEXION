@@ -1,0 +1,14 @@
+Esta unidad fue muy desafiante, no tanto por la complejidad de los ejercicios, sino por el corto tiempo en el que tuvimos que aprender tantos
+métodos de ordenación distintos. Es muy interesante ver cómo cada algoritmo tiene su propia lógica y eficiencia, y cómo la elección del
+método adecuado puede marcar una gran diferencia en el rendimiento.
+
+Por ejemplo, al principio, con el método de burbuja, todo parecía muy sencillo, comparás, intercambiás, y listo. Pero luego te das cuenta de que es
+una tortura para listas grandes. Cuando llegamos a QuickSort y vimos cómo elegir bien el pivote puede hacer que el algoritmo vuele o se arrastre,
+ahí entendí que esto tenía más ciencia de la que pensaba.
+Lo que más me sorprendió fue ShellSort. Es un método que parece una locura, pero funciona increíblemente bien. Me hizo darme cuenta de que a veces las
+ideas más raras son las que mejor funcionan. Y bueno, cuando te ponés a pensar que cada vez que buscás algo en Google o scrolleás por cualquier app,
+hay algún algoritmo de ordenación trabajando atrás para que todo funcione rápido, le encontrás más sentido a lo que estás haciendo.
+
+Realmente, esta materia fue muy desafiante, pero a su vez gratificante, ya que estoy seguro que todo lo aprendido me a servir mucho en el futuro.
+
+

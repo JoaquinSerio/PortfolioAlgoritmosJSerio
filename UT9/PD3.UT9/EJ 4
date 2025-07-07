@@ -1,0 +1,20 @@
+EJERCICIO 4
+
+1. Análisis del tiempo de ejecución:
+Mejor caso: O(n log n) - cuando el pivote siempre divide el array por la mitad
+Caso promedio: O(n log n) - análisis probabilístico
+Peor caso: O(n²) - cuando el pivote es siempre el menor o mayor elemento
+Probabilidad del peor caso:
+
+Con distribución uniforme: 1/n!
+Probabilidad extremadamente baja para n grandes
+
+
+Modificación.
+quicksort(array, low, high)
+    si (high - low + 1) <= UMBRAL entonces
+        insertionSort(array, low, high)
+    sino
+        pivote = particionar(array, low, high)
+        quicksort(array, low, pivote-1)
+        quicksort(array, pivote+1, high)

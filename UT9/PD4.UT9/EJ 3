@@ -1,0 +1,19 @@
+algoritmo_conjuntos_disjuntos(A, B):
+    1. Si m > n, intercambiar A y B
+    2. Ordenar el conjunto más pequeño A: O(m log m)
+    3. Para cada elemento x en B:
+        - Usar búsqueda binaria para buscar x en A: O(log m)
+    4. Si se encuentra algún elemento común, retornar falso
+    5. Si no se encuentra ninguno, retornar verdadero
+
+
+Análisis de Complejidad
+Complejidad temporal (peor caso): O(m log m + n log m)
+Justificación:
+
+Ordenar A: O(m log m)
+Buscar n elementos en A ordenado: O(n log m)
+Total: O(m log m + n log m) = O((m + n) log m)
+
+Cuando m << n: La complejidad se aproxima a O(n log m), que es significativamente mejor que O(n×m) de la búsqueda lineal.
+

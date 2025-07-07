@@ -1,0 +1,5 @@
+Ejercicio 1
+
+La condición que se cumple en todo momento durante la ejecución es que después de cada partición,
+el pivote queda en su posición final correcta, con todos los elementos menores a su izquierda y
+todos los mayores a su derecha.

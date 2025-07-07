@@ -1,0 +1,34 @@
+Ejercicio 2: Funciones de Pivote para QuickSort
+Estrategias de Selección de Pivote
+Pivote Fijo (primer o último elemento)
+
+Implementación simple
+Rendimiento O(n²) en arrays ordenados
+
+Pivote Aleatorio
+
+Uniformemente aleatorio, fácil de implementar, no hay "peores entradas posibles"
+Tiempo esperado: O(n log n) para cualquier entrada
+
+Mediana de Tres
+
+Selecciona la mediana entre primer, medio y último elemento
+Reduce las posibilidades de encontrar arrays ya ordenados o casi ordenados
+Más eficiente que el pivote aleatorio en la práctica
+
+Mediana de Medianas
+
+Garantiza O(n log n) en el peor caso
+Overhead considerable, raramente usado en la práctica
+
+Técnica de Selección Dinámica
+
+Técnica dependiente de datos para aumentar las posibilidades de dividir el array en tamaños relativamente iguales
+Convierte el peor caso en caso promedio
+
+Hallazgos Importantes
+Implementaciones en Lenguajes Comerciales
+Java: Arrays.sort() usa TimSort para objetos y DualPivotQuicksort para primitivos
+C#: Array.Sort() usa IntroSort (híbrido de QuickSort, HeapSort e InsertionSort)
+Python: sorted() usa TimSort (híbrido estable basado en merge sort)
+
