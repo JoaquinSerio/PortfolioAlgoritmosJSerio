@@ -3,7 +3,7 @@ uso constantemente. Antes sabía que HashMap era rápido para buscar, pero no te
 detrás había toda esta mecánica de funciones hash, buckets y colisiones. Es como cuando aprendes
 a manejar y después te explican cómo funciona el motor del auto.
 
-Lo que más me voló la cabeza fue darme cuenta de que algo tan simple como el método hashCode() puede
+Lo que más me sorprendió fue darme cuenta de que algo tan simple como el método hashCode() puede
 hacer o romper el rendimiento de toda una aplicación.
 También me sorprendió lo elegante que es la solución de usar arrays y listas enlazadas para manejar colisiones.
 Es una de esas ideas que parecen obvias una vez que las entiendes, pero que requieren mucha creatividad para
